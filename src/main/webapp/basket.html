@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>The Book Haven</title>
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/basket.css">
+      <link rel="stylesheet" type="text/css" href="styles/checkout.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <img src="images/logo.png" alt="Website Logo">
+         </div>
+         <div class="icons">
+            <div id="user-menu">
+               <span id="user-name">Hi, USERNAME</span>
+               <div class="overlay">
+                  <ul>
+                     <li><a href="#logout">Log out</a></li>
+                     <li><a href="#settings">Settings</a></li>
+                  </ul>
+               </div>
+            </div>
+            <a href="#">
+            <img src="images/menu.png" alt="Menu Icon" id="menu-icon">
+            </a>
+            <a href="#basket">
+            <img src="images/basket.png" alt="Basket Icon" id="basket-icon">
+            </a>
+         </div>
+      </header>
+      <div id="overlay"></div>
+      <div id="menu">
+         <ul>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact-us">CONTACT US</a></li>
+         </ul>
+         <button id="close-menu">Close</button>
+      </div>
+      <div class="basket-items">
+         <h2>Shopping Basket</h2>
+         <div id="basket-wrapper">
+            <ul id="basket-list">
+            </ul>
+            <div id="basket-total"></div>
+            <p id="total-price"></p>
+            <button id="basket-checkout">Checkout</button>
+         </div>
+      </div>
+      <div id="checkout-overlay" class="overlay">
+         <div class="overlay-content">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+               <span id="name-error" class="error-message"></span>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+               <span id="email-error" class="error-message"></span>
+               <label for="phone">Phone:</label>
+               <input type="tel" id="phone" name="phone" required>
+               <span id="phone-error" class="error-message"></span>
+               <label for="address-line-1">Address Line 1:</label>
+               <input type="text" id="address-line-1" name="address-line-1" required>
+               <span id="address-line-1-error" class="error-message"></span>
+               <label for="address-line-2">Address Line 2:</label>
+               <input type="text" id="address-line-2" name="address-line-2">
+               <span id="address-line-2-error" class="error-message"></span>
+               <label for="city">City:</label>
+               <input type="text" id="city" name="city" required>
+               <span id="city-error" class="error-message"></span>
+               <label for="postcode">Post Code:</label>
+               <input type="text" id="postcode" name="postcode" required>
+               <span id="postcode-error" class="error-message"></span>
+               <label for="country">Country:</label>
+               <select id="country" name="country" required>
+                  <option value="">Select a country</option>
+               </select>
+               <span id="country-error" class="error-message"></span>
+               <label for="card-number">Card Number:</label>
+               <input type="text" id="card-number" name="card-number" required>
+               <span id="card-number-error" class="error-message"></span>
+               <label for="card-holder">Card Holder Name:</label>
+               <input type="text" id="card-holder" name="card-holder" required>
+               <span id="card-holder-error" class="error-message"></span>
+               <label for="exp-date">Expiration Date:</label>
+               <input type="month" id="exp-date" name="exp-date" required>
+               <span id="exp-date-error" class="error-message"></span>
+               <label for="cvv">CVV:</label>
+               <input type="password" id="cvv" name="cvv" required>
+               <span id="cvv-error" class="error-message"></span>
+               <button id="confirm-order">Confirm Order</button>
+            </form>
+            <button class="close-overlay">Close</button>
+         </div>
+      </div>
+      <script src="javascript/menu.js"></script>
+      <script src="javascript/checkout.js"></script>
+      <script src="javascript/basket.js"></script>
+   </body>
+</html>

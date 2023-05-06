@@ -1,0 +1,32 @@
+@font-face {
+     font-family: "CustomFont";
+     src: url('fonts/Nexa-Heavy.ttf');
+}
+ body {
+     font-family: CustomFont;
+}
+ .panel {
+     width: 400px;
+     margin: 0 auto;
+     padding: 30px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     margin-top: 15%;
+}
+ .panel h2 {
+     text-align: center;
+     margin-bottom: 20px;
+}
+ .panel button {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     background-color: #1b284a;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+ .panel button:hover {
+     background-color: #121b33;
+}

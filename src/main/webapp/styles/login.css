@@ -1,0 +1,61 @@
+ @font-face {
+     font-family: "CustomFont";
+     src: url('fonts/Nexa-Heavy.ttf');
+}
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     font-family: 'CustomFont';
+}
+ header {
+     background-color: #1b284a;
+     padding: 10px;
+     text-align: center;
+}
+ header img {
+     max-width: 200px;
+}
+ .login-box {
+     margin: 0 auto;
+     margin-top: 50px;
+     max-width: 500px;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+ h2 {
+     display: flex;
+     justify-content: center;
+}
+ #error-message {
+     display: flex;
+     justify-content: center;
+     font-weight:bold;
+}
+ input[type="text"], input[type="email"], input[type="password"] {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+     font-size: 16px;
+     color: #555;
+     background-color: #fff;
+}
+ button[type="submit"] {
+     display: block;
+     margin: 0 auto;
+     padding: 10px 20px;
+     background-color: #1b284a;
+     border: none;
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+     border-radius: 5px;
+     cursor: pointer;
+}
+ 

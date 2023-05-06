@@ -1,0 +1,154 @@
+/* Global Styles */
+ @font-face {
+     font-family: "CustomFont";
+     src: url('fonts/Nexa-Heavy.ttf');
+}
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     font-family: 'CustomFont';
+}
+/* Header */
+ header {
+     background-color: #1b284a;
+     padding: 10px;
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     position: fixed;
+     z-index: 9999;
+     align-items: center;
+}
+ .logo-container img {
+     max-width: 200px;
+}
+ .icons img {
+     width: 30px;
+     cursor: pointer;
+     margin-right: 20px;
+}
+ header img {
+     max-width: 200px;
+}
+/* Main Content */
+ main {
+     padding: 50px 0;
+}
+ .container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin: 50px auto;
+     max-width: 1200px;
+}
+ .left, .right {
+     flex-basis: 50%;
+     padding: 0 20px;
+}
+ .right img, .left img {
+     width: 100%;
+     max-width: 1000px;
+     display: block;
+     margin: 0 auto;
+}
+ h2 {
+     font-size: 36px;
+     color: #1b284a;
+     margin-bottom: 20px;
+     text-align: center;
+}
+ p {
+     font-size: 18px;
+     line-height: 1.6;
+     color: #666666;
+     text-align: justify;
+}
+ .world-book-day {
+     background-color: #f9f9f9;
+}
+ .world-book-day h2 {
+     color: #0071C5;
+}
+ .world-book-day p {
+     color: #444444;
+}
+ #menu {
+     font-family: 'CustomFont';
+     background-color: #1b284a;
+     color: #fff;
+     display: none;
+     height: 100%;
+     left: 0;
+     padding: 20px;
+     margin-top: 85px;
+     position: fixed;
+     top: 0;
+     width: 20%;
+     z-index: 9999;
+}
+ #menu ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ #menu li {
+     margin: 10px 0;
+}
+ #menu a {
+     color: #fff;
+     text-decoration: none;
+}
+ #menu button {
+     background-color: #fff;
+     border: none;
+     color: #333;
+     display: block;
+     font-size: 18px;
+     margin: 10px auto;
+     padding: 10px;
+     width: 100px;
+}
+ #menu button:hover, #menu button:focus {
+     background-color: #333;
+     color: #fff;
+     cursor: pointer;
+}
+ #overlay {
+     background-color: rgba(0, 0, 0, 0.5);
+     display: none;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 9998;
+}
+ .overlay {
+     display: none;
+     position: absolute;
+     right: 0;
+     z-index: 1;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     min-width: 160px;
+     padding: 12px 0;
+     font-family: CustomFont;
+}
+ .overlay ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+ .overlay li a {
+     display: block;
+     color: #333;
+     padding: 10px;
+     text-decoration: none;
+}
+ .overlay li a:hover {
+     background-color: #f5f5f5;
+}
+ 

@@ -1,0 +1,41 @@
+@font-face {
+     font-family: "CustomFont";
+     src: url('fonts/Nexa-Heavy.ttf');
+}
+ @font-face {
+     font-family: "LightFont";
+     src: url('fonts/HunDIN1451.ttf');
+}
+ .history-items {
+     margin-top: 125px;
+}
+ h2 {
+     font-family:CustomFont;
+     margin-left: 45px;
+}
+ #history-list li {
+     display: flex;
+     align-items: center;
+     padding: 15px;
+     border-bottom: 1px solid #ddd;
+}
+ #history-list li img {
+     width: 75px;
+     height: 75px;
+     margin-right: 15px;
+}
+ .history-item-details {
+     flex-grow: 1;
+}
+ .history-item-details h3 {
+     font-family: CustomFont;
+     font-size: 18px;
+     margin: 0 0 5px;
+}
+ .history-item-details p {
+     margin: 0;
+     font-size: 16px;
+     color: '#09e37d';
+     font-family: LightFont;
+}
+ 
